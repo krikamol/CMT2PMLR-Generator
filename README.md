@@ -1,2 +1,2 @@
 # CMT2PMLR-Generator
-The scripts to generate bibtex files and the corresponding pdfs for PMLR
+The scripts to generate the bibtex file and corresponding pdfs for PMLR. 
