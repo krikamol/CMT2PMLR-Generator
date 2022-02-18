@@ -1,0 +1,22 @@
+@Proceedings{AISTATS-2021,
+    booktitle = {Proceedings of The 24th International Conference on Artificial Intelligence and Statistics},
+    name = {International Conference on Artificial Intelligence and Statistics},
+    shortname = {AISTATS},
+    editor = {Arindam Banerjee and Kenji Fukumizu},
+    volume = {130},
+    year = {2021},
+    start = {2021-13-04},
+    end = {2012-15-04},
+    url = {https://aistats.org/aistats2021/index.html},
+    location = {A Virtual Conference}
+}
+
+{% for key in papers -%}
+@InProceedings{ {{ key }},
+    title = { {{ papers[key].title }} },
+    author = { {{ papers[key].authors }} },
+    pages = { {{ papers[key].pages }} },
+    abstract = { {{ papers[key].abstract }} }
+}
+
+{% endfor %}
